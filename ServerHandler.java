@@ -61,7 +61,7 @@ consocket.getRemoteSocketAddress();
 			killService();
 		}else{
 			String message3="FAULT INPUT!DO NOT PROCESS OTHER MESSAGE.";
-			writeback(message3+'\n');
+			writeback(message3+"\nz\n");
 			
 		}
 		
@@ -69,7 +69,7 @@ consocket.getRemoteSocketAddress();
 
 	private void killService(){
 		String message2="TEMINATE";
-		writeback(message2+'\n');
+		writeback(message2+"\nz\n");
 		System.out.println("Server connection close!");
 		try {
 			consocket.close();
@@ -102,9 +102,9 @@ consocket.getRemoteSocketAddress();
 	}
 
 	private void hello() {
-		String message1= String.format("HELO text IP:[%s] port:[%d]Student ID:[%s]", IPaddress,port,studentID);
+		String message1= String.format("HELO text IP:[%s]\n port:[%d]\nStudent ID:[%s]", IPaddress,port,studentID);
 		//String message1="String formatesdasd";
-		writeback(message1+'\n');
+		writeback(message1+"\nz\n");
 		
 	}
 
